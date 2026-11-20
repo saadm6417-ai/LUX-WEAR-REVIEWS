@@ -1,0 +1,59 @@
+<!doctype html><html lang="ar" dir="rtl"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808"><title>تقييم تجربتك | LUX WEAR</title>
+<style>
+*{box-sizing:border-box}body{margin:0;padding:9px 7px 20px;background:#080808 url('assets/marble-copper.jpg') center/cover fixed;color:#f4f1eb;font-family:Tahoma,Arial,sans-serif}
+.wrap{width:min(100%,540px);margin:auto;padding:15px 10px 18px;background:#101010;border:1.5px solid #9e8249;border-radius:23px;box-shadow:0 0 22px #000}
+header{text-align:center;padding:4px 5px 8px}.brand-name{font-size:22px;line-height:1.4;font-family:Arial,sans-serif;color:#f4f1eb;margin:4px 0 6px}.kicker{color:#bda46f;font-size:12px;font-weight:bold;margin:6px 0}.rule{height:1px;background:#9f8247;margin:15px 0}
+.intro{text-align:center;padding:0 5px 9px}h1{font-size:clamp(20px,4.5vw,25px);line-height:1.5;color:#e5cc91;margin:0 0 9px}.intro p{font-size:13px;line-height:1.8;color:#d5d0c8;margin:5px 0}
+.details,.question{background:#1d1d1d;border-radius:15px;padding:11px;margin:12px 0}.details-title{font-size:16px;color:#e0c27e;font-weight:bold;margin-bottom:10px}.fields{display:grid;gap:9px}
+input[type=text],input[type=tel]{height:46px;width:100%;border:1px solid #555;border-radius:30px;background:#252525;padding:0 16px;color:#fff;font:14px Tahoma;text-align:right;outline:none}
+.qhead{display:flex;direction:rtl;text-align:right;align-items:center;gap:8px;margin-bottom:9px;font-size:14px;line-height:1.6;font-weight:bold}
+.num{order:0;flex:0 0 30px;height:30px;border-radius:7px;background:linear-gradient(145deg,#c7a35b,#94753c);color:#17120a;display:grid;place-items:center;font-size:14px}
+.qtitle{order:1;flex:1;text-align:right}
+.options{display:grid;gap:7px}.option{display:flex;direction:rtl;align-items:center;gap:9px;min-height:45px;padding:7px 10px;border:1px solid #414141;background:#252525;border-radius:9px;color:#eee;font-size:13px;line-height:1.5;cursor:pointer}
+.option input{appearance:none;width:18px;height:18px;flex:0 0 18px;border-radius:50%;border:0;background:#aaa;margin:0;position:relative}.option input:checked{background:#c7a45e}.option input:checked:after{content:"";position:absolute;inset:4px;border-radius:50%;background:#272015}.option:has(input:checked){border-color:#c5a45d;background:#30291d}
+textarea{width:100%;min-height:65px;background:#252525;border:1px solid #414141;border-radius:9px;padding:10px;color:white;font:13px/1.7 Tahoma;resize:vertical}
+.submit{width:100%;min-height:46px;margin:12px 0 3px;border:0;border-radius:9px;background:linear-gradient(110deg,#a8894b,#e1c27d,#a8894b);color:#15110a;font-size:16px;font-weight:bold;cursor:pointer}
+.error{display:none;color:#ffb6a6;text-align:center;font-size:12px;margin:10px}.finish{display:none;text-align:center;background:#1d1d1d;border:1px solid #9e8249;border-radius:16px;padding:22px 15px;margin-top:14px}.finish h2{color:#e5cc91;font-size:23px}.finish p{color:#d5d0c8;font-size:14px;line-height:1.8}.signature{color:#d0b36f;font:bold 24px Arial;margin:18px}
+@media(min-width:500px){.options{grid-template-columns:1fr 1fr}}
+</style></head><body><main class="wrap">
+<header><div class="brand-name">LUX WEAR</div><div class="kicker">CUSTOMER EXPERIENCE</div><div class="rule"></div></header>
+<form id="reviewForm">
+<section class="intro"><h1>رأيك بيفرق معانا.. وثقتك تهمنا ❤️</h1>
+<p>سعداء جداً باختيارك لـ LUX WEAR، وثقتك فينا شيء بنعتز بيه. حابين نسمع رأيك بكل صراحة، ونتعرف على تجربتك معانا، وإيه أكتر حاجة عجبتك، وإيه اللي تتمنى نشوفه ونعمل على تطويره.</p>
+<p>مشاركتك بتفرق معانا، وبتساعدنا نفهم احتياجاتك بشكل أفضل، ونقدم لك دايماً تجربة تليق بثقتك وتكون عند حسن ظنك.</p></section>
+<section class="details"><div class="details-title">بيانات أساسية</div><div class="fields">
+<input type="text" name="customerName" placeholder="الاسم" autocomplete="name" required>
+<input type="tel" name="phone" placeholder="رقم التليفون" autocomplete="tel" required></div></section>
+<div id="questions"></div><button class="submit" type="submit" id="submitBtn">إرسال التقييم</button><div class="error" id="errorMsg"></div>
+</form>
+<section class="finish" id="finish"><h2>شكراً لثقتك بنا ❤️</h2>
+<p>نقدّر وقتك واهتمامك، ونسعد بمشاركة رأيك بكل صراحة.</p>
+<p>كل رأي وملاحظة منك بتمثل لينا فرصة جديدة للتطور، وبتساعدنا نفهم احتياجاتك بشكل أفضل، ونقدم لك دايماً تجربة تليق بثقتك وتكون عند حسن ظنك.</p>
+<div class="signature">LUX WEAR</div><p>سعداء دائماً باختيارك لنا ❤️</p></section>
+</main><script>
+const SCRIPT_URL="https://script.google.com/macros/s/AKfycbzMbRgOUfrRBVJDVdCDr803be3uY-vLuKZc-pBVtyGrUT5cbD69tVDa9jaxnwyXjy29/exec";
+const questions=[
+{q:"كيف تقيّم تجربتك بشكل عام مع LUX WEAR؟",o:["ممتازة جداً","ممتازة","جيدة","تحتاج إلى تحسين"]},
+{q:"كيف قمت بالشراء من LUX WEAR؟",o:["من خلال زيارة المتجر","من خلال الشراء أونلاين"]},
+{q:"كيف تعرّفت على LUX WEAR لأول مرة؟",o:["من خلال أحد أفراد عائلة LUX WEAR","من خلال صفحاتنا على مواقع التواصل الاجتماعي","من خلال زيارة المتجر"]},
+{q:"ما مدى رضاك عن جودة المنتجات والخامات؟",o:["راضٍ جداً","راضٍ","مقبول","غير راضٍ"]},
+{q:"كيف ترى أسعار منتجاتنا مقارنة بجودتها؟",o:["مناسبة جداً","مناسبة","أعلى من المتوقع","تحتاج إلى مراجعة"]},
+{q:"كيف تقيّم مستوى الخدمة والتعامل داخل المتجر؟",o:["ممتاز","جيد جداً","جيد","يحتاج إلى تحسين"]},
+{q:"هل وجدت لدينا التنوع والموديلات التي تبحث عنها؟",o:["نعم، وجدت ما أبحث عنه","وجدت معظم ما أبحث عنه","أتمنى تنوعاً أكبر","لم أجد ما أبحث عنه"]},
+{q:"من وجهة نظرك، ما الجانب الذي تتمنى أن نعمل على تطويره؟",p:"مساحة لمشاركة رأيك واقتراحاتك..."},
+{q:"ما المنتجات أو الموديلات التي تتمنى أن نوفرها لك مستقبلاً؟",p:"مساحة لكتابة اقتراحاتك..."},
+{q:"هل لديك أي ملاحظات أو أفكار أخرى تود مشاركتنا بها؟",p:"يسعدنا الاستماع إليك..."},
+{q:"ما مدى احتمالية ترشيحك LUX WEAR لأصدقائك ومعارفك؟",o:["بالتأكيد","على الأرجح","غير متأكد","غير محتمل"]}
+];
+const root=document.getElementById('questions');
+questions.forEach((q,i)=>{const c=document.createElement('section');c.className='question';const h=document.createElement('div');h.className='qhead';
+const n=document.createElement('span');n.className='num';n.textContent=i+1;const t=document.createElement('span');t.className='qtitle';t.textContent=q.q;h.append(n,t);c.append(h);
+if(q.o){const os=document.createElement('div');os.className='options';q.o.forEach(v=>{const l=document.createElement('label');l.className='option';const r=document.createElement('input');r.type='radio';r.name='q'+(i+1);r.value=v;r.required=true;const sp=document.createElement('span');sp.textContent=v;l.append(r,sp);os.append(l)});c.append(os)}
+else{const a=document.createElement('textarea');a.name='q'+(i+1);a.placeholder=q.p;c.append(a)}root.append(c)});
+document.getElementById('reviewForm').addEventListener('submit',async e=>{e.preventDefault();const f=e.currentTarget,err=document.getElementById('errorMsg'),btn=document.getElementById('submitBtn');
+if(!f.reportValidity())return;if(!SCRIPT_URL){err.style.display='block';err.textContent='الصفحة لم يتم ربطها بجوجل شيت بعد. أضف رابط Apps Script أولاً.';return}
+const fd=new FormData(f),data={customerName:fd.get('customerName'),phone:fd.get('phone'),submittedAt:new Date().toISOString()};questions.forEach((q,i)=>data['q'+(i+1)]=fd.get('q'+(i+1))||'');
+btn.disabled=true;btn.textContent='جارٍ إرسال التقييم...';try{await fetch(SCRIPT_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(data)});f.style.display='none';document.getElementById('finish').style.display='block';window.scrollTo({top:0,behavior:'smooth'})}catch(ex){btn.disabled=false;btn.textContent='إرسال التقييم';err.style.display='block';err.textContent='حصلت مشكلة أثناء الإرسال. حاول مرة أخرى.'}});
+</script></body></html>
